@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect surplus food with those who need it. Join our food rescue network to reduce waste and fight hunger.">
+  <meta name="keywords" content="food rescue, food donation, reduce waste, hunger relief, NGO partners">
+  <link rel="canonical" href="https://foodrescue.example.com">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Food Rescue Network - End Hunger, Reduce Waste">
+  <meta property="og:description" content="Connect surplus food with those who need it. Join our food rescue network today.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foodrescue.example.com">
+  <meta property="og:image" content="https://foodrescue.example.com/og-image.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Food Rescue Network">
+  <meta name="twitter:description" content="Connect surplus food with those who need it.">
+  <meta name="twitter:image" content="https://foodrescue.example.com/twitter-image.jpg">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.foodrescue.example.com https://www.google-analytics.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+
+  <!-- Additional Security Headers -->
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Food Rescue Network - End Hunger, Reduce Waste</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content.</a>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="logo-intro">
+      <svg class="logo-svg" viewBox="0 0 100 100" aria-hidden="true">
+        <path class="logo-path" d="M50 10 L90 50 L50 90 L10 50 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle class="logo-circle" cx="50" cy="50" r="15" fill="currentColor"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <svg class="nav-logo" viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="currentColor"/>
+          <circle cx="50" cy="50" r="12" fill="white"/>
+        </svg>
+        <span class="nav-title">FoodRescue</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#partners" class="nav-link">Partners</a></li>
+        <li><a href="#donate" class="nav-link nav-link-cta">Donate Food</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="animated-bg" aria-hidden="true">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+      </div>
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-title-line">End Hunger.</span>
+            <span class="hero-title-line">Reduce Waste.</span>
+            <span class="hero-title-line hero-title-accent">Rescue Food.</span>
+          </h1>
+          <p class="hero-subtitle">Connect surplus food with communities in need. Join 500+ restaurants and NGOs making an impact.</p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-animated" data-action="donate-food">
+              <span class="btn-text">Start Donating</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="btn-ripple"></span>
+            </button>
+            <button class="btn btn-secondary" data-action="learn-more">
+              <span class="btn-text">Learn More</span>
+            </button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item reveal-on-scroll">
+              <div class="stat-number" data-target="50000">0</div>
+              <div class="stat-label">Meals Rescued</div>
+            </div>
+            <div class="stat-item reveal-on-scroll">
+              <div class="stat-number" data-target="500">0</div>
+              <div class="stat-label">Active Partners</div>
+            </div>
+            <div class="stat-item reveal-on-scroll">
+              <div class="stat-number" data-target="25">0</div>
+              <div class="stat-label">Cities Covered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section section-how">
+      <div class="container">
+        <h2 class="section-title reveal-on-scroll">How It Works</h2>
+        <div class="steps-grid">
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M12 2v20M2 12h20" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="step-title">List Surplus Food</h3>
+            <p class="step-description">Restaurants and grocers post available food items on our platform in minutes.</p>
+          </div>
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="step-title">NGOs Match Needs</h3>
+            <p class="step-description">Partner NGOs browse and claim food that matches their community needs.</p>
+          </div>
+          <div class="step-card reveal-on-scroll">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 13l4 4L19 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="step-title">Pickup & Deliver</h3>
+            <p class="step-description">Volunteers coordinate pickup and delivery to those who need it most.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section id="donate" class="section section-donate">
+      <div class="container">
+        <div class="form-wrapper reveal-on-scroll">
+          <h2 class="form-title">Start Your First Donation</h2>
+          <p class="form-subtitle">Fill out the details below and we'll connect you with local NGOs.</p>
+          
+          <form id="donation-form" class="donation-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="donor-name" class="form-label">
+                  Organization Name <span class="required">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="donor-name" 
+                  name="donorName" 
+                  class="form-input" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="donor-name-error"
+                >
+                <span id="donor-name-error" class="form-error" role="alert"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="donor-email" class="form-label">
+                  Email Address <span class="required">*</span>
+                </label>
+                <input 
+                  type="email" 
+                  id="donor-email" 
+                  name="email" 
+                  class="form-input" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="donor-email-error"
+                >
+                <span id="donor-email-error" class="form-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="food-type" class="form-label">
+                Food Type <span class="required">*</span>
+              </label>
+              <input 
+                type="text" 
+                id="food-type" 
+                name="foodType" 
+                class="form-input" 
+                placeholder="e.g., Fresh vegetables, Cooked meals, Bakery items"
+                required 
+                aria-required="true"
+                aria-describedby="food-type-error"
+              >
+              <span id="food-type-error" class="form-error" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="quantity" class="form-label">
+                  Estimated Meals <span class="required">*</span>
+                </label>
+                <input 
+                  type="number" 
+                  id="quantity" 
+                  name="quantity" 
+                  class="form-input" 
+                  min="1" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="quantity-error"
+                >
+                <span id="quantity-error" class="form-error" role="alert"></span>
+              </div>
+              
+              <div class="form-group">
+                <label for="pickup-time" class="form-label">
+                  Pickup Time <span class="required">*</span>
+                </label>
+                <input 
+                  type="datetime-local" 
+                  id="pickup-time" 
+                  name="pickupTime" 
+                  class="form-input" 
+                  required 
+                  aria-required="true"
+                  aria-describedby="pickup-time-error"
+                >
+                <span id="pickup-time-error" class="form-error" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="checkbox-wrapper">
+                <input 
+                  type="checkbox" 
+                  id="recurring" 
+                  name="recurring" 
+                  class="checkbox-input"
+                >
+                <label for="recurring" class="checkbox-label">
+                  <span class="checkbox-custom" aria-hidden="true">
+                    <svg class="checkbox-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M5 13l4 4L19 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox-text">Make this a recurring weekly donation</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="toggle-wrapper">
+                <input 
+                  type="checkbox" 
+                  id="notifications" 
+                  name="notifications" 
+                  class="toggle-input"
+                  checked
+                >
+                <label for="notifications" class="toggle-label">
+                  <span class="toggle-switch" aria-hidden="true"></span>
+                  <span class="toggle-text">Receive pickup notifications</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-animated btn-submit">
+              <span class="btn-text">Submit Donation</span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <div id="form-success" class="form-message form-message-success" role="alert" aria-live="polite" hidden>
+            <svg class="message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              <path class="checkmark-path" d="M8 12l3 3 5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h3 class="message-title">Donation Submitted Successfully!</h3>
+              <p class="message-text">We'll connect you with a local NGO within 24 hours.</p>
+            </div>
+          </div>
+
+          <div id="form-error" class="form-message form-message-error" role="alert" aria-live="polite" hidden>
+            <svg class="message-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <circle cx="12" cy="12" r="10" stroke-width="2"/>
+              <path d="M12 8v4M12 16h.01" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <h3 class="message-title">Submission Failed</h3>
+              <p class="message-text">Please try again or contact support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section section-impact">
+      <div class="container">
+        <h2 class="section-title reveal-on-scroll">Our Impact</h2>
+        <div class="impact-grid">
+          <div class="impact-card reveal-on-scroll">
+            <div class="impact-icon">🌍</div>
+            <h3 class="impact-number">2.5M</h3>
+            <p class="impact-label">Pounds of Food Rescued</p>
+          </div>
+          <div class="impact-card reveal-on-scroll">
+            <div class="impact-icon">👥</div>
+            <h3 class="impact-number">15K</h3>
+            <p class="impact-label">People Fed Monthly</p>
+          </div>
+          <div class="impact-card reveal-on-scroll">
+            <div class="impact-icon">♻️</div>
+            <h3 class="impact-number">85%</h3>
+            <p class="impact-label">Waste Reduction Rate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 class="footer-title">FoodRescue</h3>
+          <p class="footer-text">Connecting surplus food with those who need it most.</p>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/cookies">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodRescue Network. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Motion Settings Toggle (Accessibility) -->
+  <button id="motion-toggle" class="motion-toggle" aria-label="Toggle animations" title="Toggle animations">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
