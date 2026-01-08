@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect surplus food with those who need it. Food Rescue Network reduces waste and feeds communities through real-time donation matching.">
+  <meta name="keywords" content="food rescue, food donation, reduce food waste, community food, surplus food">
+  <meta name="author" content="Food Rescue Network">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Food Rescue Network – End Waste, Feed Communities">
+  <meta property="og:description" content="Connect surplus food with those who need it. Real-time donation matching for restaurants, grocers, and rescue organizations.">
+  <meta property="og:image" content="https://yoursite.com/og-image.jpg">
+  <meta property="og:url" content="https://yoursite.com">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Food Rescue Network – End Waste, Feed Communities">
+  <meta name="twitter:description" content="Connect surplus food with those who need it.">
+  <meta name="twitter:image" content="https://yoursite.com/twitter-image.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fonts: Heading (Inter) and Body (system-ui fallback) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <title>Food Rescue Network – End Waste, Feed Communities</title>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/tokens.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+  <link rel="stylesheet" href="./styles/components.css">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Food Rescue Network",
+    "url": "https://yoursite.com",
+    "logo": "https://yoursite.com/logo.png",
+    "description": "Connecting surplus food with communities in need",
+    "sameAs": [
+      "https://twitter.com/foodrescue",
+      "https://facebook.com/foodrescue"
+    ]
+  }
+  </script>
+</head>
+<body>
+  
+  <!-- Skip to main content link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <nav class="container nav-wrapper" aria-label="Main navigation">
+      <a href="/" class="logo" aria-label="Food Rescue Network home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="var(--color-primary)" opacity="0.2"/>
+          <path d="M20 8 L20 32 M12 20 L28 20" stroke="var(--color-primary)" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Food Rescue</span>
+      </a>
+      
+      <button 
+        class="mobile-menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="main-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <ul class="nav-menu" id="main-nav">
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#impact" class="nav-link">Impact</a></li>
+        <li><a href="#donate" class="nav-link">Donate Food</a></li>
+        <li><a href="#volunteer" class="nav-link">Volunteer</a></li>
+        <li>
+          <button 
+            class="motion-toggle-btn" 
+            aria-label="Toggle animations"
+            aria-pressed="false"
+            title="Reduce motion for accessibility"
+          >
+            <span class="toggle-icon" aria-hidden="true">🎬</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero" id="main-content">
+    <!-- Animated background (CSS fallback + optional particles) -->
+    <div class="hero-background" aria-hidden="true">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+      <!-- Particles container lazy-loaded via JS -->
+      <div id="particles-container"></div>
+    </div>
+    
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        End Waste,<br>
+        <span class="highlight">Feed Communities</span>
+      </h1>
+      <p class="hero-subtitle">
+        Connect surplus food with those who need it. Real-time matching for donors and rescue organizations.
+      </p>
+      
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-animated" data-action="donate">
+          <span class="btn-text">Donate Food</span>
+          <span class="btn-icon" aria-hidden="true">→</span>
+          <span class="btn-ripple"></span>
+        </button>
+        
+        <button class="btn btn-secondary btn-animated" data-action="volunteer">
+          <span class="btn-text">Volunteer</span>
+          <span class="btn-icon" aria-hidden="true">✓</span>
+          <span class="btn-ripple"></span>
+        </button>
+      </div>
+      
+      <!-- Live region for form feedback -->
+      <div class="sr-only" role="status" aria-live="polite" aria-atomic="true" id="form-status"></div>
+    </div>
+  </section>
+  
+  <!-- How It Works Section -->
+  <section class="section section-how" id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Three simple steps to rescue food and help your community</p>
+      
+      <div class="steps-grid">
+        <article class="step-card card-animated" tabindex="0">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3 class="step-title">List Surplus</h3>
+          <p class="step-description">Restaurants and grocers post available food with pickup times via our simple form.</p>
+        </article>
+        
+        <article class="step-card card-animated" tabindex="0">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3 class="step-title">Match & Notify</h3>
+          <p class="step-description">Our system instantly notifies nearby rescue organizations and volunteers in real-time.</p>
+        </article>
+        
+        <article class="step-card card-animated" tabindex="0">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3 class="step-title">Rescue & Feed</h3>
+          <p class="step-description">Volunteers collect and distribute food to shelters, community kitchens, and families.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Impact Stats Section -->
+  <section class="section section-impact" id="impact">
+    <div class="container">
+      <h2 class="section-title">Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value" data-count="120000">0</div>
+          <div class="stat-label">Meals Rescued</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="450">0</div>
+          <div class="stat-label">Partner Businesses</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="85">0</div>
+          <div class="stat-label">Rescue Organizations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" data-count="200">0</div>
+          <div class="stat-label">Tons CO₂ Saved</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Donation Form Section -->
+  <section class="section section-form" id="donate">
+    <div class="container">
+      <h2 class="section-title">Donate Surplus Food</h2>
+      <p class="section-subtitle">Fill out the form below and we'll connect you with local rescuers</p>
+      
+      <form class="donation-form" id="donation-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="business-name" class="form-label">
+              Business Name <span class="required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="business-name" 
+              name="businessName" 
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="business-name-error"
+            >
+            <span class="form-error" id="business-name-error" role="alert"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-name" class="form-label">
+              Contact Name <span class="required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="contact-name" 
+              name="contactName" 
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="contact-name-error"
+            >
+            <span class="form-error" id="contact-name-error" role="alert"></span>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" class="form-label">
+              Email <span class="required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              autocomplete="email"
+            >
+            <span class="form-error" id="email-error" role="alert"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">
+              Phone <span class="required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              class="form-input"
+              required
+              aria-required="true"
+              aria-describedby="phone-error"
+              autocomplete="tel"
+            >
+            <span class="form-error" id="phone-error" role="alert"></span>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="food-type" class="form-label">
+            Food Type <span class="required" aria-label="required">*</span>
+          </label>
+          <select 
+            id="food-type" 
+            name="foodType" 
+            class="form-select"
+            required
+            aria-required="true"
+            aria-describedby="food-type-error"
+          >
+            <option value="">Select food type</option>
+            <option value="prepared">Prepared Meals</option>
+            <option value="produce">Fresh Produce</option>
+            <option value="bakery">Bakery Items</option>
+            <option value="dairy">Dairy Products</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="form-error" id="food-type-error" role="alert"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="quantity" class="form-label">
+            Estimated Quantity (meals/lbs) <span class="required" aria-label="required">*</span>
+          </label>
+          <input 
+            type="number" 
+            id="quantity" 
+            name="quantity" 
+            class="form-input"
+            min="1"
+            required
+            aria-required="true"
+            aria-describedby="quantity-error"
+          >
+          <span class="form-error" id="quantity-error" role="alert"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="pickup-time" class="form-label">
+            Pickup Time <span class="required" aria-label="required">*</span>
+          </label>
+          <input 
+            type="datetime-local" 
+            id="pickup-time" 
+            name="pickupTime" 
+            class="form-input"
+            required
+            aria-required="true"
+            aria-describedby="pickup-time-error"
+          >
+          <span class="form-error" id="pickup-time-error" role="alert"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="notes" class="form-label">Additional Notes</label>
+          <textarea 
+            id="notes" 
+            name="notes" 
+            class="form-textarea"
+            rows="4"
+            aria-describedby="notes-hint"
+          ></textarea>
+          <span class="form-hint" id="notes-hint">Any special instructions or details about the food</span>
+        </div>
+        
+        <div class="form-group form-checkbox-group">
+          <label class="checkbox-label">
+            <input 
+              type="checkbox" 
+              name="terms" 
+              class="form-checkbox"
+              required
+              aria-required="true"
+              aria-describedby="terms-error"
+            >
+            <span class="checkbox-custom" aria-hidden="true"></span>
+            <span class="checkbox-text">
+              I agree to the <a href="/terms" class="link">Terms of Service</a> and <a href="/privacy" class="link">Privacy Policy</a>
+              <span class="required" aria-label="required">*</span>
+            </span>
+          </label>
+          <span class="form-error" id="terms-error" role="alert"></span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-animated btn-submit">
+          <span class="btn-text">Submit Donation</span>
+          <span class="btn-loader" aria-hidden="true"></span>
+          <span class="btn-ripple"></span>
+        </button>
+        
+        <!-- Success/Error Messages -->
+        <div class="form-message form-message-success" id="form-success" role="alert" hidden>
+          <svg class="message-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 12 L11 15 L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Thank you! Your donation has been submitted. We'll contact you shortly.</span>
+        </div>
+        
+        <div class="form-message form-message-error" id="form-error" role="alert" hidden>
+          <svg class="message-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 8 L12 12 M12 16 L12 16.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span id="form-error-text">An error occurred. Please try again.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-section">
+        <h3 class="footer-title">Food Rescue Network</h3>
+        <p class="footer-text">Connecting surplus food with communities in need since 2024.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#how-it-works" class="footer-link">How It Works</a></li>
+          <li><a href="#impact" class="footer-link">Impact</a></li>
+          <li><a href="/about" class="footer-link">About Us</a></li>
+          <li><a href="/contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-heading">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="/terms" class="footer-link">Terms of Service</a></li>
+          <li><a href="/privacy" class="footer-link">Privacy Policy</a></li>
+          <li><a href="/accessibility" class="footer-link">Accessibility</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4 class="footer-heading">Connect</h4>
+        <div class="social-links">
+          <a href="https://twitter.com/foodrescue" class="social-link" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/foodrescue" class="social-link" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/foodrescue" class="social-link" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2025 Food Rescue Network. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="./scripts/motion.js"></script>
+  <script src="./scripts/form-validation.js"></script>
+  <script src="./scripts/main.js"></script>
+  <!-- Particles loaded conditionally -->
+  <script>
+    // Lazy load particles only if motion is enabled and user hasn't opted out
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const motionPref = localStorage.getItem('motionEnabled');
+      if (motionPref !== 'false') {
+        const script = document.createElement('script');
+        script.src = './scripts/particles-lazy.js';
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+    }
+  </script>
+</body>
+</html>
